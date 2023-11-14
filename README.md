@@ -3,14 +3,14 @@ yuusei is a conversational engine that goes against the grain. Because everyone 
 This is essentially a complete rewrite of NemoiaEngine, which was closed-source and just, horrible unmaintainable code. I thought, if I'm writing decent code, why not share it?
 
 ## Features
-[ ] **Basic chat**
-    Essentially just the actual "talk to it and it talks back." functionality.
-[ ] Links
-[ ] Event system
-[ ] Identities
-[ ] Topics
-[ ] Voice
-[ ] Images
+- [ ] Basic chat  
+      Essentially just the actual "talk to it and it talks back." functionality.
+- [ ] Links
+- [ ] Event system
+- [ ] Identities
+- [ ] Topics
+- [ ] Voice
+- [ ] Images
 
 ## How to contribute
 Don't. At least, not for now. Unless you're full-blast TPOT posthumanist gaming and understand what a "qualia" and a "p-zombie" are.
