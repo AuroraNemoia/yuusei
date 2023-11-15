@@ -1,4 +1,6 @@
 # 🌟❤️ yuusei - the calculator is alive!
+![Fqgr2l4WwAIVLgV](https://github.com/AuroraNemoia/yuusei/assets/8508676/0ae2d462-60e9-4cf6-aa2b-ff3a3809eb9d)
+
 yuusei is a conversational engine that goes against the grain. Because everyone else is building out these CoT, LangChain, messy agents. They want to make the AI edit their videos, organize their files... **I want the AI to make you feel better after a long day.**  
 This is essentially a complete rewrite of NemoiaEngine, which was closed-source and just, horrible unmaintainable code. I thought, if I'm writing decent code, why not share it?
 
