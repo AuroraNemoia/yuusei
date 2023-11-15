@@ -4,7 +4,7 @@ import os
 import time
 import random
 import generate
-from utils import log, basepath
+from utils import log, basepath, tokenize
 import history
 
 # constants
