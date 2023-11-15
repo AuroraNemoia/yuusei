@@ -7,7 +7,7 @@ base_path = (os.path.abspath(__file__).rsplit('\\', 1)[0] + "\\").replace("\\", 
 api_base = "https://api.perplexity.ai"
 pplx_key = open(base_path + "/pplx_key", "r").read()
 
-def generateTextPPXL(prompt, temperature, tokens, model):
+def generateTextPerplexity(prompt, temperature, tokens, model):
     payload = {
         "temperature": temperature,
         "max_tokens": tokens,
@@ -32,7 +32,7 @@ def generateTextPPXL(prompt, temperature, tokens, model):
     result = response.json()["choices"][0]["message"]["content"]
     return result
 
-def generateTextCPP(prompt, temperature, tokens):
+def generateTextLlamacpp(prompt, temperature, tokens):
     payload = {
         "temperature": temperature,
         "n_predict": tokens,
