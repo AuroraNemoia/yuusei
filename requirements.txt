@@ -1,3 +1,4 @@
 requests
-git+https://github.com/patx/pickledbjstyleson
-tokenizers
+git+https://github.com/patx/pickledb
+jstyleson
+transfomers
