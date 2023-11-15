@@ -32,6 +32,7 @@ def buildPrompt():
         frontmatter = self_persona + self_instruct_post
     frontmatter_length = tokenize(frontmatter)
 
+    # What is our budget for message history?
     history_token_budget = config["settings"]["context_size"] - config["settings"]["max_new_tokens"] - frontmatter_length
 
     # Let's query messages until we hit the token limit.
