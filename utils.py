@@ -1,4 +1,6 @@
 import os
+import json
+import jstyleson
 from sys import platform
 
 def log(text, type="normal"):
