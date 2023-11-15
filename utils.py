@@ -18,3 +18,5 @@ def basepath():
                 return (os.path.abspath(__file__).rsplit('\\', 1)[0] + "\\").replace("\\", "/")
             case _:
                 return os.path.dirname(os.path.abspath(__file__).rsplit('\\', 1)[0] + "\\").replace("\\", "/")
+
+config = jstyleson.loads(open(basepath() + "/config.json", "r").read())
