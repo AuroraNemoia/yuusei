@@ -1,5 +1,6 @@
 import requests
 import json
+import jstyleson
 import os
 import time
 import random
@@ -7,8 +8,8 @@ import generate
 from utils import log, basepath, tokenize
 import history
 
-# constants
-config = json.loads(open(basepath() + "/config.json", "r").read())
+# Constants
+config = jstyleson.loads(open(basepath() + "/config.json", "r").read())
 
 # initialize self
 self_name = config["personality"]["name"]
