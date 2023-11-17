@@ -1,11 +1,11 @@
 import requests
 import os
 import json
+from utils import basePath
 
 # constants
-base_path = (os.path.abspath(__file__).rsplit('\\', 1)[0] + "\\").replace("\\", "/")
 api_base = "https://api.perplexity.ai"
-pplx_key = open(base_path + "/pplx_key", "r").read()
+pplx_key = open(basePath() + "/pplx_key", "r").read()
 
 def generateTextPerplexity(prompt, temperature, tokens, model):
     payload = {

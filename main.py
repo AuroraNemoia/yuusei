@@ -4,11 +4,11 @@ import os
 import time
 import random
 import generate
-from utils import log, basepath
+from utils import log, basePath
 import history
 
 # constants
-config = json.loads(open(basepath() + "/config.json", "r").read())
+config = json.loads(open(basePath() + "/config.json", "r").read())
 
 # initialize self
 self_name = config["personality"]["name"]

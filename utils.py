@@ -10,9 +10,9 @@ def log(text, type="normal"):
     }
     print(types.get(type, types["normal"]) + text + "\x1b[0m")
 
-def basepath():
-        match platform:
-            case "windows":
-                return (os.path.abspath(__file__).rsplit('\\', 1)[0] + "\\").replace("\\", "/")
-            case _:
-                return os.path.dirname(os.path.abspath(__file__).rsplit('\\', 1)[0] + "\\").replace("\\", "/")
+def basePath():
+    match platform:
+        case "windows":
+            return (os.path.abspath(__file__).rsplit('\\', 1)[0] + "\\").replace("\\", "/")
+        case _:
+            return os.path.dirname(os.path.abspath(__file__).rsplit('\\', 1)[0] + "\\").replace("\\", "/")
