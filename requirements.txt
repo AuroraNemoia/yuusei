@@ -1,2 +1,4 @@
 requests
 git+https://github.com/patx/pickledb
+jstyleson
+transfomers

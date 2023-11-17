@@ -1,5 +1,8 @@
 import os
+import json
+import jstyleson
 from sys import platform
+from transformers import AutoTokenizer
 
 def log(text, type="normal"):
     types = {
@@ -16,3 +19,12 @@ def basePath():
             return (os.path.abspath(__file__).rsplit('\\', 1)[0] + "\\").replace("\\", "/")
         case _:
             return os.path.dirname(os.path.abspath(__file__).rsplit('\\', 1)[0] + "\\").replace("\\", "/")
+
+config = jstyleson.loads(open(basepath() + "/config.json", "r").read())
+
+log("Using tokenizer from: " + basepath() + "/" + config["settings"]["tokenizer"])
+tokenizer = AutoTokenizer.from_pretrained(basepath() + "/" + config["settings"]["tokenizer"])
+
+def tokenize(text):
+    tokens = tokenizer.tokenize(text)
+    return len(tokens)

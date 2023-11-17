@@ -13,6 +13,9 @@ log("Loaded history with " + str(history.llen("events")) + " events!")
 def saveEvent(event):
     history.ladd("events", event)
 
+def getLength():
+    return history.llen("events")
+
 def fetchEvents(count):
     length = history.llen("events")
     return history.lrange("events", length-count, length)

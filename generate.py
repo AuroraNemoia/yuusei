@@ -28,7 +28,7 @@ def generateTextPerplexity(prompt, temperature, tokens, model):
         "content-type": "application/json",
         'Authorization': 'Bearer ' + pplx_key
     }
-    response = requests.post(url, json=payload, headers=headers)
+    response = requests.post(api_base + "/chat/completions", json=payload, headers=headers)
     result = response.json()["choices"][0]["message"]["content"]
     return result
 
