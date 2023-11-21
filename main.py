@@ -9,7 +9,7 @@ from utils import log, basepath, tokenize
 import history
 
 # Constants
-config = jstyleson.loads(open(basepath() + "/config.json", "r").read())
+config = jstyleson.loads(open(basePath() + "/config.json", "r").read())
 
 # Initialize self
 self_name = config["personality"]["name"]

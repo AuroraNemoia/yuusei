@@ -1,7 +1,7 @@
 import pickledb
-from utils import log, basepath
+from utils import log, basePath
 
-history = pickledb.load(basepath() + "/history.db", True)
+history = pickledb.load(basePath() + "/history.db", True)
 try:
     history.lget("events", 0)
 except:
